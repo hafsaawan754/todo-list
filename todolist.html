@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+
+</head>
+<body>
+   
+    <div id="time"> 
+         <!-- <img src="todo.jpg" alt="" srcset=""> -->
+        <div class="circle" style="--clr:#ff2972;">
+            <div class="dots hr_dot"></div>  
+            <svg>
+                <circle cx="70" cy="70" r="70" ></circle>
+                <circle cx="70" cy="70" r="70" id="hh" ></circle>
+            </svg>
+            <div id="hours">'00'</div>
+        </div>  
+        <div class="circle" style="--clr:#fff129;"> 
+            <div class="dots min_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70" ></circle>
+                <circle cx="70" cy="70" r="70" id="mm" ></circle>
+            </svg>
+            <div id="minutes">'00'</div>
+        </div> 
+        <div class="circle" style="--clr:#348a12;"> 
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70" ></circle>
+                <circle cx="70" cy="70" r="70" id="ss" ></circle>
+            </svg>
+            <div id="seconds">'00'</div>
+        </div> 
+        <div class="circle"> 
+            <div id="ampm">AM</div>
+        </div>  
+        </div>
+        <!-- date -->
+        <div class="date">
+            <h3 id="date-today"></h3>
+
+        </div>
+
+
+        <div class="hafsa">
+            <p>Hi! Hafsa</p>
+            <br>
+            <p>Have a nice Day!</p>
+        </div>
+
+
+    
+
+<!-- todo list -->
+<div class="container">
+    <div class="myTodo">
+        <div class="inputvalue">
+            <input class="inputVal" type="text" placeholder="Add your task" value="">
+            <button class="btn">Add Task</button>
+        </div>
+        
+       
+        <div class="todoLists">
+            
+        </div>
+        <button class="clearTask" onclick="clearTask()">Clear all Task</button>
+    </div>
+</div>
+   
+</body>
+<script src="todo.js"></script>
+</html>
